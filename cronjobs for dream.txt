@@ -1,0 +1,15 @@
+wget --spider -O - https://yourwebsite.com/crons/orders.php >/dev/null 2>&1 
+wget --spider -O - https://yourwebsite.com/crons/providers.php >/dev/null 2>&1 
+wget --spider -O - https://yourwebsite.com/crons/checkToAPI.php >/dev/null 2>&1 
+wget --spider -O - https://yourwebsite.com/crons/dripfeed.php >/dev/null 2>&1 
+wget --spider -O - https://yourwebsite.com/crons/childpanels.php >/dev/null 2>&1 
+wget --spider -O - https://yourwebsite.com/crons/sync.php >/dev/null 2>&1
+
+wget --spider -O - https://yourwebsite.com/crons/refill.php >/dev/null 2>&1
+wget --spider -O - https://yourwebsite.com/crons/average.php >/dev/null 2>&1
+wget --spider -O - https://yourwebsite.com/crons/autoreply.php >/dev/null 2>&1
+
+
+
+ 
+all cron job time is 1min ok

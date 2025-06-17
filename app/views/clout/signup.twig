@@ -1,0 +1,187 @@
+
+
+
+{% include 'header2.twig' %}
+
+
+
+   <section class="register-page">
+            <div class="rp-content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6 order-2 order-md-1">
+                            <img src="https://cdn.smmspot.net/cloutsy/assets/img/register.png" class="rp-top-img" alt="">
+                            <h2 class="rp-left-title" Benefits of {{ site['site_name'] }}!</h2>
+                            <p class="rp-left-text">
+                                There's a ton of reasons why {{ site['site_name'] }} is the Best SMM Panel. Our super fast support, or maybe all of our amazing services, or maybe our custom order management bot that was built for all customers to manage orders. Whatever it is, we take care of you! Sign up today and start growing your social media!          </p>
+                            <h3 class="rp-left-s-title mb-4 pb-2">upgrade Experiences</h3>
+                            <div class="card card-border p-4 mt-4">
+                                <div class="testi-card">
+                                    <div class="tc-top">
+                                        <div class="tc-avatar">
+                                            <img src="https://cdn.smmspot.net/cloutsy/assets/img/home/avatar-1.png" alt="Avatar"
+                                                class="tc-avatar-img">
+                                        </div>
+                                        <div class="tc-name">
+                                            Gabriel, Influencer
+                                        </div>
+                                        <div class="tc-stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tc-content">
+                                        <p class="tc-text">
+                                            One of the things I do for work is to build engagement on Youtube and Instagram Accounts for different clients. Services I order in this
+                                            dashboard helps me save a lot of money and still do the great work my clients do.
+                                            expect me to. Highly recommended!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 offset-lg-2 order-1 order-md-2 mb-5 mb-md-0">
+                            <div class="d-inline-block">
+                                <a href="#" class="sd-back">
+                                    <i class=""></i>
+                                    <span class="text"></span>
+                                </a>
+                            </div>
+                            <div class="mt-5"></div>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-auto">
+                                    <div class="rp-icon">
+                                        <i class="ri-login-circle-line"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="rp-sign-up-title">Register at <p> {{ site['site_name'] }}</h3>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                             {% if errorText %}
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          {{ errorText }}
+        </div>
+      {% endif %}
+      {% if successText %}
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          {{ successText }}
+        </div>
+      {% endif %}
+                            
+                            <form action="" method="POST">
+
+                                          <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                             <div class="d-icon i-info me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                            <span class="i-color fw-600">Username</span>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control" id="username" name="username" value="{{ data['username'] }}">
+                                </div>
+                                
+                                
+                                <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-icon i-warning me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                           <span class="w-color fw-600">Name
+                                        </div>
+                                    </label>
+                                   <input type="text" class="form-control" id="firstname" name="name" value="{{ data['name'] }}">
+                                </div>
+                                
+                                
+                                
+                                
+                                <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-icon i-secondary me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                            <span class="s-color fw-600">WhatsApp Or Phone</span>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control" id="skype" name="telephone" value="{{ data['telephone'] }}">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-icon i-info me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                            <span class="i-color fw-600">E-mail</span>
+                                        </div>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email" value="{{ data['email'] }}">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-icon i-warning me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                            <span class="w-color fw-600">Password</span>
+                                        </div>
+                                    </label>
+                                     <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mb-2" class="form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-icon i-secondary me-2">
+                                                <i class="ri-vip-crown-2-line"></i>
+                                            </div>
+                                            <span class="s-color fw-600">Repeat your password</span>
+                                        </div>
+                                    </label>
+                                   <input type="password" class="form-control" id="confirm" name="password_again">
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="terms" value="1"> I read and accept the
+                                                <a href="/terms" target="_blank">Terms and conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                              
+                                            <div class="g-recaptcha form-group" data-sitekey="6LeF5rUaAAAAADYvG5QRSND25xaKUr_ba9EQ7PbY"></div>
+                                                  <input type="hidden" name="_csrf" value="QVvotTJ0i2WBSM1IaZIBQ8Aizmw_egQcv4twcB_VU0ogPrflUxjjF8wJuTEo-Ukor0eqKxIKd1H3-RExcrQrHg==">
+
+                                <button class="btn btn-primary btn-block btn-border" type="submit">
+                                    Create an account
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+<script src="https://www.google.com/recaptcha/api.js?hl={{ lang['code'] }}"></script>
+{% include 'footer.twig' %}

@@ -1,0 +1,65 @@
+[19-Jun-2022 08:37:19 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 08:37:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 15:20:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 15:40:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 21:37:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 21:37:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 23:57:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[19-Jun-2022 23:57:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[20-Jun-2022 02:07:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[20-Jun-2022 02:07:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[20-Jun-2022 03:50:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[20-Jun-2022 04:40:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10
+[20-Jun-2022 05:05:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::isSMTP() in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php:10
+Stack trace:
+#0 /home/alnvenda/Gold.alnvendas.online/crons/providers.php(78): sendMail(Array)
+#1 {main}
+  thrown in /home/alnvenda/Gold.alnvendas.online/app/classes/mail.php on line 10

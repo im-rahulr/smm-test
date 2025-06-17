@@ -1,0 +1,336 @@
+{% include 'header.twig' %}
+
+    
+<div class="wrapper-content">
+    <div class="wrapper-content__header">
+          </div>
+
+    <div class="wrapper-content__body">
+    
+      <!-- Main variables *content* -->
+      <div id="block_93">
+  <div class="totals ">
+    <div class="bg"></div>
+    <div class="divider-top"></div>
+    <div class="divider-bottom"></div>
+    <div class="container-fluid">
+      <div class="row align-items-start justify-content-start">
+                              <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mt-2">
+              <div class="card h-100"
+                   style="
+                                                                                    padding-top: 24px;                                  padding-bottom: 24px;                                                                                                                                                                                                                                  border-left-width: 0px;                                  border-right-width: 0px;                                  border-bottom-width: 0px;                                  border-top-width: 0px;                                                                  border-style: solid; ">
+                <div class="totals-block__card">
+                  <div class="totals-block__card-left">
+                    <div
+                        class="totals-block__icon-preview style-bg-primary-alpha-10 style-border-radius-default style-text-primary"
+                        style="
+                                                                                                                                                                                                                    ">
+                  <center>      <span class="totals-block__icon style-text-primary fad fa-user-check" style="
+                            font-size: 38px;
+                            transform: rotate(0deg);
+                            color: ;
+                            text-shadow: none;
+                            border-radius: 0px;
+                            "></span></center>
+                    </div>
+                  </div>
+                  <div class="totals-block__card-right">
+                    <div class="totals-block__count">
+                      <div class="totals-block__count-value style-text-primary"
+                           style=" font-size: 36px; line-height: 36px; ">
+                        <center>                          {{ user["username"]  }}  </center>
+                                                                      </div>
+                    </div>
+                    <div class="totals-block__card-name">
+                                         <center>     <p>Welcome to {{ site["site_name"]  }}  !</p></center>
+                                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mt-2">
+              <div class="card h-100"
+                   style="
+                                                                                    padding-top: 24px;                                  padding-bottom: 24px;                                                                                                                                                                                                                                  border-left-width: 0px;                                  border-right-width: 0px;                                  border-bottom-width: 0px;                                  border-top-width: 0px;                                                                  border-style: solid; ">
+                <div class="totals-block__card">
+                  <div class="totals-block__card-left">
+                    <div
+                        class="totals-block__icon-preview style-bg-primary-alpha-10 style-border-radius-default style-text-primary"
+                        style="
+                                                                                                                                                                                                                    ">
+                     <center>  <span class="totals-block__icon style-text-primary fas fa-crown" style="
+                            font-size: 38px;
+                            transform: rotate(0deg);
+                            color: ;
+                            text-shadow: none;
+                            border-radius: 0px;
+                            "></span></center>
+                    </div>
+                  </div>
+                  <div class="totals-block__card-right">
+                    <div class="totals-block__count">
+                      <div class="totals-block__count-value style-text-primary"
+                           style=" font-size: 36px; line-height: 36px; ">
+                                            <center>                              {{ AllOrders}} </center>
+                                              </div>
+                    </div>
+                    <div class="totals-block__card-name">
+                                            <center>  <p>Completed Orders</p></center>
+                                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mt-2">
+              <div class="card h-100"
+                   style="
+                                                                                    padding-top: 24px;                                  padding-bottom: 24px;                                                                                                                                                                                                                                  border-left-width: 0px;                                  border-right-width: 0px;                                  border-bottom-width: 0px;                                  border-top-width: 0px;                                                                  border-style: solid; ">
+                <div class="totals-block__card">
+                  <div class="totals-block__card-left">
+                    <div
+                        class="totals-block__icon-preview style-bg-primary-alpha-10 style-border-radius-default style-text-primary"
+                        style="
+                                                                                                                                                                                                                    ">
+                    <center>    <span class="totals-block__icon style-text-primary fas fa-money-bill-alt" style="
+                            font-size: 38px;
+                            transform: rotate(0deg);
+                            color: ;
+                            text-shadow: none;
+                            border-radius: 0px;
+                            "></span></center>
+                    </div>
+                  </div>
+                  <div class="totals-block__card-right">
+                    <div class="totals-block__count">
+                      <div class="totals-block__count-value style-text-primary"
+                           style=" font-size: 36px; line-height: 36px; ">
+                                                 <center> {{ currency["symbol"]  }} {{ (user["spent"]*currency["value"]) |round(7, 'floor') }} </center>
+                                                                      </div>
+                    </div>
+                    <div class="totals-block__card-name">
+                                     <center>         <p>Spent balance</p></center>
+                                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mt-2">
+              <div class="card h-100"
+                   style="
+                                                                                    padding-top: 24px;                                  padding-bottom: 24px;                                                                                                                                                                                                                                  border-left-width: 0px;                                  border-right-width: 0px;                                  border-bottom-width: 0px;                                  border-top-width: 0px;                                                                  border-style: solid; ">
+                <div class="totals-block__card">
+                  <div class="totals-block__card-left">
+                    <div
+                        class="totals-block__icon-preview style-bg-primary-alpha-10 style-border-radius-default style-text-primary"
+                        style="
+                                                                                                                                                                                                                    ">
+                     <center>   <span class="totals-block__icon style-text-primary fas fa-dollar-sign" style="
+                            font-size: 38px;
+                            transform: rotate(0deg);
+                            color: ;
+                            text-shadow: none;
+                            border-radius: 0px;
+                            "></span></center>
+                    </div>
+                  </div>
+                  <div class="totals-block__card-right">
+                    <div class="totals-block__count">
+                      <div class="totals-block__count-value style-text-primary"
+                           style=" font-size: 36px; line-height: 36px; ">
+                                           <center>       {{ currency["symbol"]  }} {{ (user["balance"]*currency["value"]) |round(7, 'floor') }} </center>
+                                                                      </div>
+                    </div>
+                    <div class="totals-block__card-name">
+                                           <center>   <p> Your Account Balance</p></center>
+                                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                                            </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+
+{% if PageText %} 
+      <div id="block_93">
+    <div class="new_order-block ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row new-order-form">
+                <div class="col-lg-8">
+                   <div class="component_form_group component_card component_radio_button">
+                      <div class=" ">
+    <div class="col-md-12">
+      
+      
+    </div>
+</div>
+    </div>
+  </div></div></div></div></div>
+  
+  
+  
+  
+  </div></div>
+{% endif %} 
+  
+
+{% include 'footer.twig' %}
+
+<script>
+
+
+function ikon(opt) {
+    var ikon = "";
+    if (opt.indexOf("Instagram") >= 0) {
+        ikon = "<span class=\"fs-ig\"><i class=\"fab fa-instagram\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("YouTube") >= 0) {
+        ikon = "<span class=\"fs-yt\"><i class=\"fab fa-youtube\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Facebook") >= 0) {
+        ikon = "<span class=\"fs-fb\"><i class=\"fab fa-facebook-square\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Youtube") >= 0) {
+        ikon = "<span class=\"fs-yt\"><i class=\"fab fa-youtube\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Twitter") >= 0) {
+        ikon = "<span class=\"fs-tw\"><i class=\"fab fa-twitter\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Google") >= 0) {
+        ikon = "<span class=\"fs-gp\"><i class=\"fab fa-google-plus\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Swarm") >= 0) {
+        ikon = "<span class=\"fs-fsq\"><i class=\"fab fa-forumbee\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Dailymotion") >= 0) {
+        ikon = "<span class=\"fs-dm\"><i class=\"fab fa-hospital-o\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Periscope") >= 0) {
+        ikon = "<span class=\"fs-pc\"><i class=\"fab fa-map-marker\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Soundcloud") >= 0) {
+        ikon = "<span class=\"fs-sc\"><i class=\"fab fa-soundcloud\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Vine") >= 0) {
+        ikon = "<span class=\"fs-vn\"><i class=\"fab fa-vine\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Spotify") >= 0) {
+        ikon = "<span class=\"fs-sp\"><i class=\"fab fa-spotify\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Snapchat") >= 0) {
+        ikon = "<span class=\"fs-snap\"><i class=\"fab fa-snapchat-square\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Pinterest") >= 0) {
+        ikon = "<span class=\"fs-pt\"><i class=\"fab fa-pinterest-p\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("iTunes") >= 0) {
+        ikon = "<span class=\"fs-apple\"><i class=\"fab fa-apple\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("Müzik") >= 0) {
+        ikon = "<span class=\"fs-music\"><i class=\"fab fa-music\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("Vimeo") >= 0) {
+        ikon = "<span class=\"fs-videmo\"><i class=\"fab fa-vimeo\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("Ekşi") >= 0) {
+        ikon = "<span class=\"fs-eksi\"><i class=\"fab fa-tint\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("Telegram") >= 0) {
+        ikon = "<span class=\"fs-telegram\"><i class=\"fab fa-telegram\" aria-hidden=\"true\"></i> </span>";
+
+    }else if (opt.indexOf("SosyalCennet") >= 0) {
+        ikon = "<span class=\"fs-hot\"><i class=\"fab fa-hotjar\" aria-hidden=\"true\"></i> </span>";
+
+    }else if (opt.indexOf("Twitch") >= 0) {
+        ikon = "<span class=\"fs-twc\"><i class=\"fab fa-twitch\" aria-hidden=\"true\"></i> </span>";
+
+    } else if (opt.indexOf("Zomato") >= 0) {
+        ikon = "<span class=\"fs-zom\"><i class=\"fab fa-cutlery\" aria-hidden=\"true\"></i> </span>";
+ } else if (opt.indexOf("Amazon") >= 0) {
+        ikon = "<span class=\"fs-amaz\"><i class=\"fab fa-amazon\" aria-hidden=\"true\"></i> </span>";
+   } else if (opt.indexOf("Tumblr") >= 0) {
+        ikon = "<span class=\"fs-tumb\"><i class=\"fab fa-tumblr-square\" aria-hidden=\"true\"></i> </span>";
+  
+   } else if (opt.indexOf("Yandex") >= 0) {
+        ikon = "<span class=\"fs-yndx\"><i class=\"fab fa-yoast\" aria-hidden=\"true\"></i> </span>";
+  
+  } else if (opt.indexOf("Linkedin") >= 0) {
+        ikon = "<span class=\"fs-lnk\"><i class=\"fab fa-linkedin\" aria-hidden=\"true\"></i> </span>";
+  
+  } else if (opt.indexOf("Yahoo") >= 0) {
+        ikon = "<span class=\"fs-yahoo\"><i class=\"fab fa-yahoo\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Private") >= 0) {
+        ikon = "<span class=\"fs-private\"><i class=\"fab fa-times\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("TikTok") >= 0) {
+        ikon = "<span class=\"fs-tiktok\"><i class=\"fab fa-tiktok\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Tiktok") >= 0) {
+        ikon = "<span class=\"fs-tiktok\"><i class=\"fab fa-tiktok\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Clubhouse") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fas fa-camera-home\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Audiomack") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-music\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Snapchat") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-snapchat\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Plays") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-music\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("SoundCloud") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-soundcloud\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Reddit") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-reddit\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Pinterest") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-pinterest\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Linkedin") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-linkedin-in\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Tumblr") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-tumblr\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Blogger") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-blogger\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Likee") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-heart\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Mixcloud") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-mixcloud\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("VK") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-vk\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Vimeo") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-vimeo-v\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Periscope") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-periscope\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Dailymotion") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-dailymotion\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Kiwi") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-kiwi-bird\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("OnlyFans") >= 0) {
+        ikon = "<span class=\"\"><i class=\"far fa-lock-alt\" aria-hidden=\"true\"></i> </span>";
+    } else if (opt.indexOf("Discord") >= 0) {
+        ikon = "<span class=\"\"><i class=\"fab fa-discord\" aria-hidden=\"true\"></i> </span>";
+    } else {
+   //  ikon = "<span class=\"\"><img src=\"https://i.imgur.com/elZtKPB.png\" style=\"width: 22px;\"> </span>  ";
+   ikon = "<span class=\"\"><img src=\"https://cdn.mypanel.link/gvi09a/y3ons7m9tfde83d0.png\" style=\"width: 22px;\"> </span>  ";
+    }
+    return ikon;
+}
+  
+
+$(document).ready(function() {
+
+	
+	$(".mk-icons").each(function() {
+				var ico = ikon($(this).text());
+				$(this).html(ico + $(this).text() );
+				console.log($(this).text());
+		});	
+    
+      
+		
+		
+		
+		//console.log(ico);
+		//console.log($(".mk-icon").html());
+       // $("#mk-icon").html(ico );
+});
+
+function chk()
+        {
+        	var a=document.getElementById("orderform-service").value;
+        	document.getElementById("span_sh").textContent="ID : "+a;
+        // alert("ID : "+ a );
+        }
+
+</script>
+

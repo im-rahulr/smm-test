@@ -1,0 +1,356 @@
+{% include 'header.twig' %}
+
+
+<!-- Main variables *content* -->
+		<!-- Event snippet for Add Funds conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-787628475/aMSFCNXGjKUBELuDyfcC',
+      'transaction_id': ''
+  });
+</script>
+<div class="app-content">
+    <div id="PageTitle">Add Balance</div>
+    <div class="container-fluid">
+        <section class="dashboard-head-wrapper">
+            <div class="dashboard-head card-border">
+              	<img src="https://cdn.mypanel.link/fsvxaw/pkemxikt27iwdbje.png" 
+                     class="mascot-img" />
+                <div class="dhead-body">
+                    <h2 class="title">
+                       How to add Balance?
+                    </h2>
+                    <p class="text">
+                        <a href="/tickets">Adding Balance is easy </a>Just select the desired method and enter the Reais amount
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="w">
+            <div class="row row-cols-lg-3 row-cols-md-2">
+                <div class="col">
+                    <div class="card card-border card-af-top">
+                        <div class="p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="dh-icon icon-info">
+                                        <i class="ri-bank-card-line"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="af-text">
+                                        To send a Complete Financial Expenses Report to your email, click  <a class="i-color"
+                                            href="/tickets">Here.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./col -->
+                <div class="col">
+                    <div class="card card-border card-af-top">
+                        <div class="p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="dh-icon icon-secondary">
+                                        <i class="ri-paypal-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="af-text">
+                                        Pay with PIX through Mercado Pago quickly and simply (Minimum of BRL 1.00)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./col -->
+                <div class="col">
+                    <div class="card card-border card-af-top">
+                        <div class="p-4">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="dh-icon icon-primary">
+                                        <i class="ri-money-dollar-box-line"></i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="af-text">
+                                        If you wish to send Bank Transfers, please <a target="_blank" href="https://wa.me/923170705989" class="p-color">Click Here and Send Proof </a> via WhatsApp
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ./col -->
+            </div><!-- ./row -->
+        </section>
+        <section class="">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card card-border">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col-md">
+                                    <h3 class="card-title">
+                                        Deposit balance in your wallet
+                                    </h3>
+                                </div>
+                                <div class="col-md-auto">
+                                    <ul class="nav nav-pills af-nav mb-3" id="addFunds-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-add-funds-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-add-funds" type="button"
+                                                role="tab" aria-controls="pills-add-funds" aria-selected="true">Add Balance</button>
+                                        </li>
+                                        {#<li class="nav-item" role="presentation">#}
+                                        {#    <button class="nav-link" id="pills-pm-history-tab" data-bs-toggle="pill"#}
+                                        {#        data-bs-target="#pills-pm-history" type="button" role="tab"#}
+                                        {#        aria-controls="pills-pm-history" aria-selected="false">Payment#}
+                                        {#        History</button>#}
+                                                
+                                               
+                                        {#</li>#}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- ./card-header -->
+                        <div class="card-body">
+                            <div class="tab-content" id="addFunds-tabContent">
+                                <div class="tab-pane fade show active" id="pills-add-funds" role="tabpanel"
+                                    aria-labelledby="pills-add-funds-tab">
+                                    <form method="post" action="addfunds">
+
+                <div class="form-group">
+                  <label for="method" class="control-label">{{ lang['addfunds.method'] }}</label>
+                  <select class="form-control" id="payment_method" name="payment_type">
+                   {% for payment in paymentsList %}
+                      <option value="{{ payment['id'] }}" {% if data['payment_type'] == payment['id'] %} selected {% endif %} >{{ payment['method_name'] }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                  <div class="form-group">
+                      <label for="method" class="control-label">{{ lang['addfunds.amount'] }}</label>
+                      <input class="form-control" name="payment_amount" value="{{ data['payment_amount'] }}">
+                  </div>
+
+                <button type="submit" class="btn btn-primary btn-border btn-block">{{ lang['addfunds.button'] }}</button>
+              </form>
+              
+          
+{% if PaytmQR == 2 %}
+        <div id="tab-14" class="col-md-12">
+           <div class="well">
+            <div class="form-group">
+                  <label for="method" class="control-label"></label>
+                  <select class="form-control" id="payment_method" name="payment_type">                      <option value="12" >Manual Payment via EasyPaisa/Jazzcash
+</option>                  </select>
+                </div>
+
+              <div class="panel-body">
+                <form method="post" action="addfunds">
+                    <center><img width="100%" src="https://i.imgur.com/yugBlGZ.png"></center>
+                    <div class="form-group col-md-12">
+                        
+                    </div>
+                    <div class="form-group col-md-12">
+                        
+                    </div>
+                    <div class="col-md-auto col-12 mt-4 mt-md-0 ms-auto">
+              <a target="_blank" rel="noreferrer" href="https://wa.me/923170705989" class="btn btn-primary btn-sm btn-block">Send Proof</a>
+                    </div>
+                </form>
+              </div>
+            </div>  
+          </div>
+        </div>
+      {% endif %}
+              
+              
+              
+                                {#</div>#}
+                                
+                                
+                                
+                                 
+                                
+                                <div class="tab-pane fade" id="pills-pm-history" role="tabpanel"
+                                    aria-labelledby="pills-pm-history-tab">
+                                                                              </div>
+                            </div>
+                        </div><!-- ./card-body -->
+                    </div><!-- ./card -->
+                </div><!-- ./col(left) -->
+                <div class="col-lg-6">
+                    <ul class="nav nav-pills af-nav-pay mb-3" id="payMethods-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-payeer-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-payeer" type="button" role="tab" aria-controls="pills-payeer"
+                                aria-selected="true">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/payeer.svg" alt="Payeer Logo">
+                                </div>
+                                <div class="text">Payeer</div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-credit-card-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-credit-card" type="button" role="tab"
+                                aria-controls="pills-credit-card" aria-selected="false">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/credit.svg" alt="Credit Card Logo">
+                                </div>
+                                <div class="text">Credit Card</div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-pay-tm-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-pay-tm" type="button" role="tab" aria-controls="pills-pay-tm"
+                                aria-selected="false">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/pay-tm.svg" alt="PayTM Logo">
+                                </div>
+                                <div class="text">PayTM</div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-coinbase-tm-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-coinbase-tm" type="button" role="tab"
+                                aria-controls="pills-coinbase-tm" aria-selected="false">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/coinbase.svg" alt="Coinbase Logo">
+                                </div>
+                                <div class="text">Coinbase</div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-paypal-tm-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-paypal-tm" type="button" role="tab"
+                                aria-controls="pills-paypal-tm" aria-selected="false">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/paypal.svg" alt="Payeer Logo">
+                                </div>
+                                <div class="text">Paypal</div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-perfect-money-tm-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-perfect-money-tm" type="button" role="tab"
+                                aria-controls="pills-perfect-money-tm" aria-selected="false">
+                                <div class="icon">
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/pm.svg" alt="Payeer Logo">
+                                </div>
+                                <div class="text">Perfect Money</div>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="card card-border">
+                        <div class="card-body p-lg-5 p-4">
+                            <div class="tab-content" id="payMethods-tabContent">
+                                <div class="tab-pane fade show active" id="pills-payeer" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <h4 class="af-pm-title">Payeer</h4>
+                                    <p class="af-pm-about">Deposit Funds via PayPal, Skrill and others.</p>
+                                    <p class="af-pm-text">All funds are automatically added to your wallet within 5 minutes while using this method.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/payeer.svg" class="af-pm-img" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="pills-credit-card" role="tabpanel"
+                                    aria-labelledby="pills-credit-card-tab">
+                                    <h4 class="af-pm-title">Credit Card</h4>
+                                    <p class="af-pm-about">Deposit Funds via Credit/Debit Card. (Our processor is Checkout.com)</p>
+                                    <p class="af-pm-text">All Credit/Debit Card transactions will be automatically uploaded within 10 seconds. If not, transaction was declined and you must call your bank to verify the charge. Once you confirm, it will allow all future purchases.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/credit.svg" class="af-pm-img" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="pills-pay-tm" role="tabpanel"
+                                    aria-labelledby="pills-pay-tm-tab">
+                                    <h4 class="af-pm-title">PayTM Business</h4>
+                                    <p class="af-pm-about">Despoit Funds via PayTM</p>
+                                    <p class="af-pm-text">You must also fill out form when scanning code and submit through website. Funds will be automatically added within 2 minutes.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/pay-tm.svg" class="af-pm-img" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="pills-coinbase-tm" role="tabpanel"
+                                    aria-labelledby="pills-coinbase-tm-tab">
+                                    <h4 class="af-pm-title">Coinbase</h4>
+                                    <p class="af-pm-about">Despoit Funds with Crypto-currency</p>
+                                    <p class="af-pm-text">BTC, LTC, ETH and many more. Funds will be automatically added within 30 minutes.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/coinbase.svg" class="af-pm-img" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="pills-paypal-tm" role="tabpanel"
+                                    aria-labelledby="pills-paypal-tm-tab">
+                                    <h4 class="af-pm-title">PayPal</h4>
+                                    <p class="af-pm-about">Deposit Funds via Paypal</p>
+                                    <p class="af-pm-text">PayPal Payment options are only for VIP members. Minimum $100 deposit required.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/paypal.svg" class="af-pm-img" alt="">
+                                </div>
+                                <div class="tab-pane fade" id="pills-perfect-money-tm" role="tabpanel"
+                                    aria-labelledby="pills-perfect-money-tm-tab">
+                                    <h4 class="af-pm-title">Perfect Money</h4>
+                                    <p class="af-pm-about">Deposit Funds via Perfect Money</p>
+                                    <p class="af-pm-text">Instantly add funds to your account with PerfectMoney.</p>
+                                    <img src="https://cdn.smmspot.net/cloutsy/assets/img/pay/pm.svg" class="af-pm-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <br>
+      <div class="">
+          
+          <centre><h4 class="af-pm-title">Transaction History</h4></centre>
+              <div class="table-responsive custom-table">
+            <table class="table table-striped ">
+              <thead>
+            <tr>
+              <th>ID</th>
+              <th>Amount</th>
+              <th class="width-40">Method</th>
+              <th>Date</th>
+              <th class="nowrap">Transaction ID</th>
+            </tr>
+          </thead>
+          <tbody>
+<td colspan="9">
+            {% for transaction in transactions %}
+              <tr>
+                <td>{{ transaction['payment_id'] }}</td>
+
+                
+<td>
+               
+
+              {{ (transaction['payment_amount']*currency['value']) }} {{currency["symbol"]}}     
+              </td>  
+                <td class="width-40">{{ transaction['method_name'] }}</td>
+                <td>{{ transaction['payment_create_date'] }}</td>
+                <td class="nowrap">{{ transaction['payment_extra'] }}</td>
+                
+              </tr>
+            {% endfor %}
+</td>
+          </tbody>
+        </table>
+      </div>
+                    
+                    
+                    
+                    
+                    
+                </div><!-- ./col(right) -->
+            </div>
+        </section>
+    </div>
+</div><!-- app-content -->
+
+
+
+
+
+
+
+
+
+{% include 'footer.twig' %}

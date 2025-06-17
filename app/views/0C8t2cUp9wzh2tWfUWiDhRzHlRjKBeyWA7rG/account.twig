@@ -1,0 +1,185 @@
+{% include 'header.twig' %}
+
+   <div class="wrapper-content">
+    <div class="wrapper-content__header">
+          </div>
+
+{% if PageText %}
+
+      <div id="block_93">
+    <div class="new_order-block ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+            <div class="row new-order-form">
+                <div class="col-lg-8">
+                   <div class="component_form_group component_card component_radio_button">
+                      <div class=" ">
+    <div class="col-md-12">
+      
+      <div class="card">
+        {{ contentText }}
+      </div>
+    </div>
+</div>
+    </div>
+  </div></div></div></div></div>
+{% endif %} 
+    <div class="wrapper-content__body">
+      <!-- Main variables *content* -->
+      <div id="block_88">
+    <div class="account ">
+        <div class="bg"></div>
+        <div class="divider-top"></div>
+        <div class="divider-bottom"></div>
+        <div class="container">
+{% if error %}
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          {{ errorText }}
+        </div>
+      {% endif %}
+      {% if success %}
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          {{ successText }}
+        </div>
+      {% endif %}
+            <div class="row account__alignment">
+                <div class="col-lg-5">
+
+                                        <div class="component_card">
+                        <div class="card account-card">
+                            <div class="component_form_group">
+
+      
+
+      
+        <div class="form-group">
+          <label for="charge" class="control-label">{{ lang['account.username'] }}</label>
+          <input type="text" class="form-control" value="{{ user['username'] }}" readonly>
+        </div>
+
+        
+
+        <div class="form-group">
+          <label for="charge" class="control-label">{{ lang['account.email'] }}</label>
+          <input type="text" class="form-control" value="{{ user['email'] }}" readonly>
+        </div>
+          
+</div>
+</div>
+        </div>
+    
+ </div>
+     
+            
+    
+
+    </div>
+<div class="component_card">
+                        <div class="card account-card">
+
+      <div class="well">
+        <form method="post" action="account">
+
+          <div class="form-group">
+            <label for="charge" class="control-label">{{ lang['account.password.current'] }}</label>
+            <input type="password" class="form-control" value="" name="current_password">
+          </div>
+
+          <div class="form-group">
+            <label for="charge" class="control-label">{{ lang['account.password.new'] }}</label>
+            <input type="password" class="form-control" value="" name="password">
+          </div>
+
+          <div class="form-group">
+            <label for="charge" class="control-label">{{ lang['account.password.confirm'] }}</label>
+            <input type="password" class="form-control" value="" name="confirm_password">
+          </div>
+          <button type="submit" class="btn btn-block btn-big-primary">{{ lang['account.password.button'] }}</button>
+        
+      </div>
+</form>
+</div>
+                </div>
+            
+                
+            
+
+      {% if site['languages']|length > 1 %}
+        <div class="well">
+          <form method="post" action="account/change_lang">
+
+            <div class="form-group">
+              <label for="charge" class="control-label">{{ lang['account.changelang.title'] }}</label>
+              <select class="form-control" name="lang">
+                  {% for language in site['languages'] %}
+                  <option {% if language["code"] == user["lang"] %} selected {% endif %} value="{{ language["code"] }}">{{ language["name"] }}</option>
+                  {% endfor %}
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-big-primary">{{ lang['account.changelang.button'] }}</button>
+          </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+       {% endif %}
+<div class="component_card">
+                        <div class="card account-card">
+         <form method="post" action="account/currency">
+
+           <div class="form-group">
+             <label for="charge" class="control-label">Currency</label>
+             <select class="form-control" name="currency">
+                 
+<option {% if currency["id"] == "{{ user['currency'] }}" %} selected  {% endif %} value="{{ currency['id'] }}">Active:-{{ currency['name'] }}</option>
+{% for currencies in currencies %}
+                 <option value="{{ currencies["id"] }}">{{ currencies["name"] }}</option>
+                 {% endfor %}
+             </select>
+           </div>
+
+           <button type="submit" class="btn btn-block btn-big-primary">Change</button>
+         </form>
+       </div>
+    </div>
+<div class="component_card">
+                        <div class="card account-card">
+                            <form class="component_form_group" action="/account/newapikey" method="post">
+                                <div class="">
+                                    <div class="form-group">
+                                        <label>API key</label>
+                                        <div class="d-flex">
+                                                                                        <div class="">
+                                                <div class="component_button_save">
+                                                   <div class="">
+                                                
+                                                       <input type="hidden" name="_csrf" value="WcTHAGHCuQUKh6WRZ_KxNhWwYRIZjilB7qbTimoKuDcOlYZGE4HuX2v-8LxRuN90Qt4yV1TianSZzJb8CEj2Vg==">
+                                                       <button class="btn btn-block btn-big-primary" type="submit">
+                                                           Generate new
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include 'footer.twig' %}
